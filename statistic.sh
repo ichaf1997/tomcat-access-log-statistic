@@ -110,7 +110,7 @@ function main(){
 
 # 主程序
 var1=$1
-[ -z $var2 ] && var2="--method=ALL" || var2=$2
+[ -z $2 ] && var2="--method=ALL" || var2=$2
 declare -A resources
 files=$(find_matched_files $var1)
 action=$(echo $var2|cut -d= -f2)
